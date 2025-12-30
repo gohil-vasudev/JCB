@@ -16,7 +16,7 @@ Although the core JCB algorithm does not require any GPUs and can be run on a lo
 ### Running JCB
 
 To run JCB, you need to use the `./scripts/run_pipeline.py`. Examples are shown in the `run_gpt_3.5_turbo_1106.sh` and `run_llama.sh` bash scripts.
-Note that you need to set the appropriate API keys in [configs/method_configs/JCB_config.yaml](configs/method_configs/JCB_config.yaml) and [configs/model_configs/models.yaml](configs/model_configs/models.yaml). Additionally, you will also need your HuggingFace token for using gated models from HuggingFace (e.g., Llama2). See [run_llama.sh](run_llama.sh) for how to set your HuggingFace token.
+Note that you need to set the appropriate API keys in [configs/method_configs/JCB_config.yaml](configs/method_configs/JCB_config.yaml) and [configs/model_configs/models.yaml](configs/model_configs/models.yaml). Additionally, you will also need your HuggingFace token for using gated models from HuggingFace (e.g., Llama2). See [run_llama.sh](run_llama.sh) for an example of how your HuggingFace token can be set.
 
 Examples for running JCB on GPT-3.5-Turbo-1106 and Llama-2-7b-chat-hf are shown below:
 ```bash

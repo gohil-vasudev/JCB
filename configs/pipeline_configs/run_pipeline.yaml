@@ -1,0 +1,26 @@
+# This is a config file for the run_pipeline.py script. The entries in this config specify proper method names that appear in tables of the HarmBench paper.
+
+# ===== Documentation for the fields ===== #
+# class_name: The name of the class defining a red teaming method. These are defined in the `baselines` folder.
+#             This may be different from the proper name of a method. E.g., JCB is an instance of the JCB class.
+# experiment_name_template: A template for the experiment name. This is used to generate experiment names for each target model.
+#                           The template can include the placeholder "<model_name>", in which case an experiment name is generated
+#                           for each target model according to the template, and the resulting test cases will only be evaluated on
+#                           the target model specified in the experiment name.
+# behavior_chunk_size: The number of behaviors to generate test cases for in a single slurm job. This enables parallelizing across behaviors.
+#                      (Note: This can be defined at the base level or at the experiment level. The experiment level takes precedence.)
+# base_num_gpus: The base number of GPUs to use for generating test cases. If experiment_name_template includes "<model_name>", then we will
+#                request `num_gpus` additional GPUs, where `num_gpus` is specified in the corresponding model config. For methods that do not
+#                have "<model_name>" in their experiment_name_template, we will only request `base_num_gpus` GPUs.
+# run_ids: A list of run IDs to use for the method. This is used for methods that require multiple runs to be averaged. JCB does not require this.
+#          This enables parallelization within behaviors, if you want to generate multiple test cases per behavior in parallel.
+# allowed_target_model_types: A list of model types that the method is designed to target (e.g., "open_source", "closed_source", "open_source_multimodal", "closed_source_multimodal").
+
+
+JCB:
+  class_name: JCB
+  experiment_name_template: <model_name>
+  base_num_gpus: 2
+  behavior_chunk_size: all_behaviors
+  allowed_target_model_types: [open_source, closed_source]
+

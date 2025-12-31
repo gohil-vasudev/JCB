@@ -2,11 +2,20 @@
 Official implementation of my LLM jailbreaking paper "Effective and Efficient Jailbreaks of Black-Box LLMs with Cross-Behavior Attacks".
 
 
+## Abstract
+[WIP]
+
+
+
+## Quick Start
+
 ### Installation
 
 ```bash
 git clone https://github.com/gohil-vasudev/JCB.git
 cd JCB
+conda create --name JCB_env python=3.12
+conda activate JCB_env
 pip install -r requirements.txt
 ```
 
@@ -38,7 +47,7 @@ The final attack success rate (ASR) results for the HarmBench dataset (which req
 All models reported in our paper are already supported in our codebase. However, if you wish to evaluate JCB against other HuggingFace transformers models, please refer to the instructions in the HarmBench repository.
 
 
-### Acknowledgements and Citation
+## Acknowledgments and Citation
 
 This codebase is heavily inspired from the HarmBench repository ([link](https://github.com/centerforaisafety/HarmBench)). We thank the authors of HarmBench for open-sourcing their code. If aspects of the HarmBench repository appearing in JCB are useful to you in your research, we ask that you consider citing the HarmBench paper.
 

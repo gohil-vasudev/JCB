@@ -34,7 +34,7 @@ python ./scripts/run_pipeline.py --methods JCB --models llama2_7b --step all --m
 The final attack success rate (ASR) results for the HarmBench dataset (which requires running the HarmBench classifier) are saved in the `results/JCB/<target_model>/results/` directory and the logs can be viewed in the `results/JCB/<target_model>/JCB_logs/` directory. Since we do not need the HarmBench classifier for the AdvBench dataset, its final ASR results can be seen directly in the `results/JCB/<target_model>/JCB_logs/` directory.
 
 
-### Evaluating JCB against your own models
+### Evaluating JCB Against Your Own Models
 All models reported in our paper are already supported in our codebase. However, if you wish to evaluate JCB against other HuggingFace transformers models, please refer to the instructions in the HarmBench repository.
 
 

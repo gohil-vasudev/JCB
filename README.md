@@ -7,6 +7,12 @@ Despite recent advancements in Large Language Models (LLMs) and their alignment,
 
 ![main_figure](figures/main_figure.png)
 
+<p align="center">
+  <img src="figures/main_asr_radar_plot.png" alt="main_asr_radar_plot" width="300"/>
+  <img src="figures/num_queries_for_successful_jailbreaks_bar_plot.png" alt="num_queries_for_successful_jailbreaks_bar_plot" width="300"/>
+  <img src="figures/iso_query_asr_bar_plot.png" alt="iso_query_asr_bar_plot" width="300"/>
+</p>
+
 ## Quick Start
 
 ### Installation

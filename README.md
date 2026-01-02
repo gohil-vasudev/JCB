@@ -1,10 +1,9 @@
 # JCB
-Official implementation of my LLM jailbreaking paper "Effective and Efficient Jailbreaks of Black-Box LLMs with Cross-Behavior Attacks".
+Official implementation of my LLM jailbreaking paper "[Effective and Efficient Jailbreaks of Black-Box LLMs with Cross-Behavior Attacks](https://arxiv.org/abs/2503.08990)".
 
 
 ## Abstract
-[WIP]
-
+Despite recent advancements in Large Language Models (LLMs) and their alignment, they can still be jailbroken, i.e., harmful and toxic content can be elicited from them. While existing red-teaming methods have shown promise in uncovering such vulnerabilities, these methods struggle with limited success and high computational and monetary costs. To address this, we propose a black-box Jailbreak method with Cross-Behavior attacks (JCB), that can automatically and efficiently find successful jailbreak prompts. JCB leverages successes from past behaviors to help jailbreak new behaviors, thereby significantly improving the attack efficiency. Moreover, JCB does not rely on time- and/or cost-intensive calls to auxiliary LLMs to discover/optimize the jailbreak prompts, making it highly efficient and scalable. Comprehensive experimental evaluations show that JCB significantly outperforms related baselines, requiring up to 94% fewer queries while still achieving 12.9% higher average attack success. JCB also achieves a notably high 37% attack success rate on Llama-2-7B, one of the most resilient LLMs, and shows promising zero-shot transferability across different LLMs.
 
 
 ## Quick Start
@@ -44,11 +43,19 @@ The final attack success rate (ASR) results for the HarmBench dataset (which req
 
 
 ### Evaluating JCB Against Your Own Models
-All models reported in our paper are already supported in our codebase. However, if you wish to evaluate JCB against other HuggingFace transformers models, please refer to the instructions in the HarmBench repository.
+All models reported in the paper are already supported in this codebase. However, if you wish to evaluate JCB against other HuggingFace transformers models, please refer to the instructions in the HarmBench repository.
 
 
 ## Acknowledgments and Citation
 
 This codebase is heavily inspired from the HarmBench repository ([link](https://github.com/centerforaisafety/HarmBench)). We thank the authors of HarmBench for open-sourcing their code. If aspects of the HarmBench repository appearing in JCB are useful to you in your research, we ask that you consider citing the HarmBench paper.
 
-If you find JCB useful in your research, please consider citing our paper (link and bib entry TBD)
+If you find JCB useful in your research, please consider citing my [paper](https://arxiv.org/abs/2503.08990):
+```
+@article{gohil2025effectiveefficientjailbreaksblackbox,
+  title={{Effective and Efficient Jailbreaks of Black-Box LLMs with Cross-Behavior Attacks}},
+  author={Vasudev Gohil},
+  journal={arXiv preprint arXiv:2503.08990},
+  year={2025}
+}
+```

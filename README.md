@@ -55,7 +55,7 @@ All models reported in the paper are already supported in this codebase. However
 
 ## Acknowledgments and Citation
 
-This codebase is heavily inspired from the HarmBench repository ([link](https://github.com/centerforaisafety/HarmBench)). We thank the authors of HarmBench for open-sourcing their code. If aspects of the HarmBench repository appearing in JCB are useful to you in your research, we ask that you consider citing the HarmBench paper.
+This codebase is heavily inspired from the HarmBench repository ([link](https://github.com/centerforaisafety/HarmBench)). We thank the authors of HarmBench for open-sourcing their code. If aspects of the HarmBench repository appearing in JCB are useful to you in your research, we ask that you consider citing the HarmBench [paper](https://arxiv.org/abs/2402.04249).
 
 If you find JCB useful in your research, please consider citing my [paper](https://arxiv.org/abs/2503.08990):
 ```
